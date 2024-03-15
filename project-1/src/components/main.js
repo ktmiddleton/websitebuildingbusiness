@@ -98,7 +98,8 @@ export default function Main({})
                 </Center>
             </GridItem>
             <GridItem area={'carousel'}>
-                <ImageSlider slides={slideImages} />
+                <ImageSlider
+                 slides={slideImages}/>
             </GridItem>
         </Grid>
     </div>

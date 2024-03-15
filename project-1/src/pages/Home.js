@@ -12,7 +12,7 @@ export default function Home(props)
         templateAreas={`"nav nav nav"
                         "main main main"
                         "footer footer footer"`}
-        gridTemplateRows={{base: '150px 150vh 150px'}}
+        gridTemplateRows={{base: '150px 100vh 150px'}}
         gridTemplateColumns={{base:'.25fr 3fr 2fr'}}
         h='100vh'
         gap='0'
