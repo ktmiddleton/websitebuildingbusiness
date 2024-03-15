@@ -4,17 +4,22 @@ export default function TeamMemberDisplay(props)
 {
     return (
         <Card
-        direction={{ base: 'column', sm: 'row' }}
+        direction={"row"}
         overflow='hidden'
         variant='outline'
         bg={"brand.secondaryWhite"}
         justify={"center"}
-
+        maxH={"30vh"}
+        maxW={"60vw"}
         >
         <Image
-            objectFit={"fill"}
+            objectFit={"cover"}
             borderRadius={"full"}
-            maxW={{ base: '100%', sm: '200px' }}
+            maxH={"100px"}
+            maxW={"80px"}
+            minH={"90px"}
+            minW={"70px"}
+            boxSize={"20vh"}
             src= {props.image ? props.image : 'https://images.unsplash.com/photo-1558222218-b7b54eede3f3?q=80&w=2574&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D'}
             alt= {props.name}
         />
@@ -25,6 +30,7 @@ export default function TeamMemberDisplay(props)
             size='md'
             fontFamily="Raleway"
             textAlign="center"
+            fontSize={"28"}
             color="black"
             >{props.name}
             </Heading>
@@ -32,7 +38,9 @@ export default function TeamMemberDisplay(props)
             <Text 
             py='2'
             fontFamily="Verdana"
+            fontSize={"12"}
             whiteSpace={"pre-line"}
+            maxW={"300px"}
             >
                 {props.description}
             </Text>

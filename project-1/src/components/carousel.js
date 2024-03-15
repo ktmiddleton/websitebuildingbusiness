@@ -11,6 +11,8 @@ const ImageSlider = ({ slides }) => {
           height="100vh" 
           width="100vw" 
           _hover={{}}
+          objectFit={"cover"}
+          boxSize={"50vh"}
           />;
         })}
       </Carousel>

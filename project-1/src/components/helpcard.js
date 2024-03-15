@@ -1,6 +1,6 @@
-import {Card, Image, Stack, Text, Heading, CardBody, Button, CardFooter, ButtonGroup, Divider} from "@chakra-ui/react";
+import { Box, Card, Image, Stack, Text, Heading, CardBody, Button, CardFooter, ButtonGroup, Divider} from "@chakra-ui/react";
 
-export default function helpcard(props) 
+export default function helpCard(props) 
 {
     return (
         <Card maxW='sm'>

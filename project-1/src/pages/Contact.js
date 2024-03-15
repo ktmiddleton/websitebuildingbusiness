@@ -3,7 +3,7 @@ import { Box, Flex, Grid, GridItem, HStack, VStack, Heading, Spacer, Center, Sta
 import Navbar from "../components/navbar";
 import Main from "../components/main";
 import Footer from "../components/footer";
-import helpCard from "../components/helpcard";
+import HelpCard from "../components/helpcard.js";
 
 export default function Contact(props) 
 {
@@ -47,7 +47,7 @@ export default function Contact(props)
                         >
                             Each of the following packages reflects our services, and describes who they are intended for.
                         </Text>
-                        <div className="helpPage">
+                        
                             <Grid
                                 gridTemplateAreas={`"banner banner banner banner"
                                                     "card1 card2 card3 card4"`}
@@ -55,22 +55,21 @@ export default function Contact(props)
                                 gridTemplateColumns={"25vw, 25vw, 25vw, 25vw"}
                             >
                                 <GridItem area="banner">
-
+                                    <HelpCard/>                                
                                 </GridItem>
                                 <GridItem area="card1">
-                                    <helpCard packageType="Cobalt" packageColor="black" packageDesc="This package includes basic web design elements, \n suitable for a normal website."/>
+                                    <HelpCard packageType="Cobalt" packageColor="black" packageDesc="This package includes basic web design elements, \n suitable for a normal website."/>
                                 </GridItem>
                                 <GridItem area="card2">
-                                    <helpCard packageType="Gold" packageColor="brand.highlightGold" packageDesc="This package includes limited design and flow planning with a design expert, as well as everything included in the cobalt package."/>
+                                    <HelpCard packageType="Gold" packageColor="brand.highlightGold" packageDesc="This package includes limited design and flow planning with a design expert, as well as everything included in the cobalt package."/>
                                 </GridItem>
                                 <GridItem area="card3">
-                                    <helpCard packageType="Platinum" packageColor="brand.darkerWhite" packageDesc="This package includes everything from gold and cobalt, along with complicated implementations of technology within the website. Ideal for use cases that require more attention."/>
+                                    <HelpCard packageType="Platinum" packageColor="brand.darkerWhite" packageDesc="This package includes everything from gold and cobalt, along with complicated implementations of technology within the website. Ideal for use cases that require more attention."/>
                                 </GridItem>
                                 <GridItem area="card4">
-                                    <helpCard packageType="Diamond" packageColor="brand.primaryBlue" packageDesc="Includes everything from previous packages, as well as a full design overhaul. Designed for those looking to plan both a brand and a website as one."/>
+                                    <HelpCard packageType="Diamond" packageColor="brand.primaryBlue" packageDesc="Includes everything from previous packages, as well as a full design overhaul. Designed for those looking to plan both a brand and a website as one."/>
                                 </GridItem>
                             </Grid>
-                        </div>
                     </VStack>
                 </Center>
             </GridItem>
