@@ -8,6 +8,7 @@ const ImageSlider = ({ slides }) => {
         {slides.map((slide) => {
           return <Image 
           src={slide.image} 
+          alt="A slideshow of images containing computers and websites."
           height="100vh" 
           width="100vw" 
           _hover={{}}

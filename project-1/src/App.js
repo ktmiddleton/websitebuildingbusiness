@@ -12,10 +12,12 @@ const theme = extendTheme({
   {
     brand: 
     {
-      primaryBlue: "#5B7EAB",
+      // "#5B7EAB"
+      primaryBlue: "#000000", 
       highlightGold: "#EBB246",
-      secondaryWhite: "#F0EAD6",
-      darkerWhite: "#C4BFAF",
+      secondaryWhite: "#EBB246",
+      // "#C4BFAF"
+      darkerWhite: "#FFFFFF",
     },
   },
   components: 
@@ -28,7 +30,7 @@ const theme = extendTheme({
         {
           width: "150px",
           height: "50px",
-          bg: "brand.secondaryWhite",
+          bg: "white",
           color: "black",
           fontSize: "1.3rem",
           textAlign: "start",
@@ -37,7 +39,6 @@ const theme = extendTheme({
           m: "4",
           _hover: 
           {
-            border: "1px solid white",
             color:"white",
             bg: "brand.highlightGold",
           },

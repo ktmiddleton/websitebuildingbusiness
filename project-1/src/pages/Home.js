@@ -18,7 +18,7 @@ export default function Home(props)
         gap='0'
         color='blackAlpha.700'
         fontWeight='bold'
-        overflow="scroll"
+        overflowX="Hidden"
         >
             <GridItem area={'footer'}>
                 <Footer />

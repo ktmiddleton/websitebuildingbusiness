@@ -15,7 +15,7 @@ import {
     Spacer,
     Image
 } from '@chakra-ui/react';
-import { ReactComponent as Logo} from '../assets/Asset1.svg';
+import { ReactComponent as Logo} from '../assets/WebScapesLogo.svg';
 
 export default function Navbar({}) 
 {
@@ -44,12 +44,13 @@ export default function Navbar({})
                     boxSize={32}
                     bg={"transparent"}
                     ml={"6"}
-                    _hover={{bg: "brand.highlightGold"}}
+                    _hover={{bg: "transparent"}}
                     onClick={handleNavigate("/")}
                     />
                     <Button
                     bg={"transparent"}
-                    _hover={{bg: "transparent", color:"brand.secondaryWhite"}}
+                    color="white"
+                    _hover={{bg: "transparent", color:"brand.highlightGold"}}
                     fontFamily="Raleway"
                     fontWeight={"Bold"}
                     onClick={handleNavigate("/ourteam")}
@@ -60,7 +61,8 @@ export default function Navbar({})
                     </Button>
                     <Button
                     bg={"transparent"}
-                    _hover={{bg: "transparent", color:"brand.secondaryWhite"}}
+                    color="white"
+                    _hover={{bg: "transparent", color:"brand.highlightGold"}}
                     fontFamily="Raleway"
                     fontWeight={"Bold"}
                     onClick={handleNavigate("/ourwork")}

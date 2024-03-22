@@ -18,6 +18,7 @@ export default function Contact(props)
         gap='0'
         bg='brand.darkerWhite'
         fontWeight='bold'
+        overflowX="hidden"
         >
             <GridItem area={'footer'}>
                 <Footer />
@@ -39,6 +40,7 @@ export default function Contact(props)
                             >
                                 <GridItem 
                                 bgImg={"https://images.unsplash.com/photo-1533282960533-51328aa49826?q=80&w=2742&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}
+                                alt="Image of the New York skyline."
                                 area="banner"
                                 h={"50vh"}
                                 mx={"40"}

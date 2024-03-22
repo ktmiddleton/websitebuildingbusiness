@@ -7,8 +7,9 @@ export default function TeamMemberDisplay(props)
         direction={"row"}
         overflow='hidden'
         variant='outline'
-        bg={"brand.secondaryWhite"}
-        justify={"center"}
+        border="1px solid black"
+        bg={"brand.white"}
+        align={"center"}
         maxH={"30vh"}
         maxW={"60vw"}
         >

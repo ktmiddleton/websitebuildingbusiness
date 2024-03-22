@@ -9,17 +9,18 @@ export default function helpCard(props)
         my={"10"}
         mx={"10"}
         overscrollY={"auto"}
-        bg={"brand.secondaryWhite"}
+        bg={"white"}
+        boxShadow={"lg"}
         >
         <CardBody>
             <Stack mt='6' spacing='3'>
-            <Heading size='md' color={props.packageColor}>{props.packageType}</Heading>
+            <Heading size='md' color={"black"}>{props.packageType}</Heading>
             <Text
             maxW={"400px"}
             >
                 {props.packageDesc}
             </Text>
-            <Text color= {props.packageColor} fontSize='2xl'>
+            <Text color= {"black"} fontSize='2xl'>
                 {props.packagePrice}
             </Text>
             </Stack>
@@ -27,10 +28,20 @@ export default function helpCard(props)
         <Divider />
         <CardFooter>
             <ButtonGroup spacing='2'>
-            <Button variant='solid' colorScheme='blue'>
+            <Button 
+            variant='solid' 
+            color="white" 
+            bg="black" 
+            _hover={{bg:"black", color: "brand.highlightGold"}}
+            >
                 Purchase Package
             </Button>
-            <Button variant='ghost' colorScheme='blue'>
+            <Button 
+            variant='solid' 
+            color="black" 
+            bg="transparent" 
+            _hover={{bg:"transparent", color: "brand.highlightGold"}}
+            >
                 Schedule Appointment
             </Button>
             </ButtonGroup>

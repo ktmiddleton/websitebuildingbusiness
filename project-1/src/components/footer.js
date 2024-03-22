@@ -30,8 +30,8 @@ import { FaTiktok } from "react-icons/fa";
 export default function Footer({}) 
 {
     const navigate = useNavigate();
-    const title= "_______ Incorporated";
-    const copyright="Copyright © 2024, ____ Incorporated."
+    const title= "WebScapes Design Incorporated";
+    const copyright="Copyright © 2024, WebScapes Design Incorporated."
 
     function handleNavigate(path) 
     {
