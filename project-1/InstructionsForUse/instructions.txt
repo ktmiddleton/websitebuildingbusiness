@@ -41,3 +41,7 @@ If there is an error, it may be that there is an extra package that is not insta
 If it says "_____ does not exist" all you need to do is look up the package name and use npm install with the name to install it.
 
 Watch the video for more information.
+
+
+Link to video:
+https://youtu.be/mNWn93i-mTU
