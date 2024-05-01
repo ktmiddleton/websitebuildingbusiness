@@ -35,7 +35,10 @@ export default function Main({})
         return () => navigate(path);
     }
 
-    const slideImages=[{image:"https://images.unsplash.com/photo-1527689368864-3a821dbccc34?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}, {image:"https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}, {image:"https://images.unsplash.com/photo-1519222970733-f546218fa6d7?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"}]
+    const slideImages=[
+        {image:"https://images.unsplash.com/photo-1527689368864-3a821dbccc34?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", title:"Website Template #1", description: "Example description for website template #1."}, 
+        {image:"https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=2426&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", title:"Website Template #2", description: "Example description for website template #2."}, 
+        {image:"https://images.unsplash.com/photo-1519222970733-f546218fa6d7?q=80&w=2670&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D", title:"Website Template #3", description:  "Example description for website template #3."}]
     const description= "For over 25 years, we've built websites for a wide range of companies. We're professional - but we're also here for you. \n Your needs are the most important part of this equation, so we will always put you first."
     const title= "Hi, We're Webscapes, and we build websites."
     return (
@@ -105,7 +108,7 @@ export default function Main({})
                     />
                 </Center>
             </GridItem>
-            <GridItem area={'carousel'}>
+            <GridItem area={'carousel'} bg="brand.highlightGold" p={12}>
                 <ImageSlider
                  slides={slideImages}/>
             </GridItem>

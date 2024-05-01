@@ -18,10 +18,10 @@ export default function Home(props)
         gap='0'
         color='blackAlpha.700'
         fontWeight='bold'
-        overflowX="Hidden"
+        overflowX="hidden"
         >
             <GridItem area={'footer'}>
-                <Footer />
+                <Footer contact />
             </GridItem>
             <GridItem area={'nav'}>
                 <Navbar />
