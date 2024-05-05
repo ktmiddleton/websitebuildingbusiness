@@ -4,3 +4,5 @@ These are the meta tags that I would use for this company, WebScapes to boost SE
 <meta property="og:url" content="https://www.WebScapes.com/">
 <meta property="og:title" content="WebScapes Design - Custom Web & Software Development">
 <meta property="og:description" content="WebScapes Design specializes in creating websites and software tailored to your needs. Contact us today for custom web development solutions.">
+<meta property="og:author" content="Kobe Middleton">
+<meta property="og:keywords" content"website, website-builder, web, software development, software">
