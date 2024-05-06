@@ -46,5 +46,7 @@ Watch the video for more information.
 Link to Project1 video:
 https://youtu.be/mNWn93i-mTU
 
-Link to Project2 video:
+Link to Project2 Website:
+https://websitebuildingbusiness.vercel.app/
+
 
