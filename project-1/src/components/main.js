@@ -66,13 +66,14 @@ export default function Main({})
                         fontFamily="Raleway"
                         textAlign="center"
                         color="black"
+                        p={4}
                         >
                             {title}
                         </Heading>
                         <Text
                         fontFamily="Verdana"
                         whiteSpace={"pre-line"}
-                        mt={6}
+                        p={4}
                         >
                             {description}
                         </Text>
@@ -84,8 +85,7 @@ export default function Main({})
                         color="white"
                         _hover={{color: "brand.highlightGold"}}
                         onClick={handleNavigate("/contact")}
-                        mr={12}
-                        mt={6}
+                        mt={4}
                         size={"large"}
                         fontSize={"x-large"}
                         fontFamily="Raleway"
@@ -108,9 +108,13 @@ export default function Main({})
                     />
                 </Center>
             </GridItem>
-            <GridItem area={'carousel'} bg="brand.highlightGold" p={12}>
-                <ImageSlider
-                 slides={slideImages}/>
+            <GridItem area={'carousel'} bg="brand.highlightGold">
+                <Center p={2.5}>
+                    <VStack>
+                        <ImageSlider
+                        slides={slideImages}/>
+                    </VStack>
+                </Center>
             </GridItem>
         </Grid>
     </div>

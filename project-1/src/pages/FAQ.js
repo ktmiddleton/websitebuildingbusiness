@@ -4,7 +4,7 @@ import Navbar from "../components/navbar";
 import Main from "../components/main";
 import Footer from "../components/footer";
 
-export default function OurWork(props) 
+export default function FAQ(props) 
 {
     return (
     <div className="classes">

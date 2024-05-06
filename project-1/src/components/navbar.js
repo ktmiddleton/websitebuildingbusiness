@@ -53,11 +53,11 @@ export default function Navbar({})
                     _hover={{bg: "transparent", color:"brand.highlightGold"}}
                     fontFamily="Raleway"
                     fontWeight={"Bold"}
-                    onClick={handleNavigate("/ourteam")}
+                    onClick={handleNavigate("/team")}
                     fontSize={"x-large"}
                     ml={"6"}
                     >
-                        Our Team
+                        Team
                     </Button>
                     <Button
                     bg={"transparent"}
@@ -65,10 +65,32 @@ export default function Navbar({})
                     _hover={{bg: "transparent", color:"brand.highlightGold"}}
                     fontFamily="Raleway"
                     fontWeight={"Bold"}
-                    onClick={handleNavigate("/ourwork")}
+                    onClick={handleNavigate("/faqs")}
                     fontSize={"x-large"}
                     >
-                        Our Work
+                        FAQs
+                    </Button>
+                    <Button
+                    bg={"transparent"}
+                    color="white"
+                    _hover={{bg: "transparent", color:"brand.highlightGold"}}
+                    fontFamily="Raleway"
+                    fontWeight={"Bold"}
+                    onClick={handleNavigate("/portfolio")}
+                    fontSize={"x-large"}
+                    >
+                        Portfolio
+                    </Button>
+                    <Button
+                    bg={"transparent"}
+                    color="white"
+                    _hover={{bg: "transparent", color:"brand.highlightGold"}}
+                    fontFamily="Raleway"
+                    fontWeight={"Bold"}
+                    onClick={handleNavigate("/services")}
+                    fontSize={"x-large"}
+                    >
+                        Services
                     </Button>
                 </HStack>
             </div>

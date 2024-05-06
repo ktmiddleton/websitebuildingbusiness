@@ -5,7 +5,9 @@ import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import Contact from './pages/Contact';
 import Home from './pages/Home';
 import OurTeam from './pages/OurTeam';
-import OurWork from './pages/OurWork';
+import FAQ from './pages/FAQ';
+import Services from './pages/Services';
+import Portfolio from './pages/Portfolio';
 
 const theme = extendTheme({
   colors: 
@@ -58,9 +60,11 @@ function App() {
         <ChakraProvider theme={theme}>
           <Routes> {/* Add routes to pages below */}
             <Route path='/' element={<Home />} />
+            <Route path='/services' element={<Services />}/>
+            <Route path='/team' element={<OurTeam />}/>
+            <Route path='/faqs' element={<FAQ />}/>
+            <Route path='/portfolio' element={<Portfolio />}/>
             <Route path='/contact' element={<Contact />}/>
-            <Route path='/ourteam' element={<OurTeam />}/>
-            <Route path='/ourwork' element={<OurWork />}/>
           </Routes>
         </ChakraProvider>
     </div>

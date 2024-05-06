@@ -9,25 +9,9 @@ export default function OurTeam(props)
 {
     return (
     <div className="classes">
-        <Grid
-        templateAreas={`"nav nav nav"
-                        "main main main"
-                        "footer footer footer"`}
-        gridTemplateRows={{base: '150px 80vh 150px'}}
-        gridTemplateColumns={{base:'.25fr 3fr 2fr'}}
-        h='100vh'
-        gap='0'
-        color='blackAlpha.700'
-        fontWeight='bold'
-        overflowX="hidden"
+        <VStack minH={"100vh"} overflowX="hidden"
         >
-            <GridItem area={'footer'}>
-                <Footer />
-            </GridItem>
-            <GridItem area={'nav'}>
                 <Navbar />
-            </GridItem>
-            <GridItem area={'main'}>
                 <Center
                 h={"80vh"}
                 w={"100vw"}
@@ -75,8 +59,9 @@ export default function OurTeam(props)
                         </div>
                     </VStack>
                 </Center>
-            </GridItem>
-        </Grid>
+                <Spacer/>
+                <Footer />
+        </VStack>
     </div>
     )
 }
