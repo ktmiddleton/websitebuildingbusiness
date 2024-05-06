@@ -96,9 +96,7 @@ export default function Main({})
                 </Center>
             </GridItem>
             <GridItem area={'rightImage'}>
-                <Center
-                    h=''
-                >
+                <Center>
                     <Image 
                     src={homepagephoto}
                     alt="A picture of a computer on a desk."

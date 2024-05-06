@@ -76,7 +76,7 @@ export default function Contact(props)
                     </VStack>
                 </Center>
                 <Spacer />
-                <Footer />
+                <Footer contact />
             </VStack>
         </div>
         )

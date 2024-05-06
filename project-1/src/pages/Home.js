@@ -16,7 +16,7 @@ export default function Home(props)
 
     return (
     <div className="home">
-        <VStack minH={"100vh"} overflowX="hidden"
+        <VStack spacing={0} minH={"100vh"} overflowX="hidden"
         >
             <Navbar />
             <Main />

@@ -3,9 +3,17 @@ import { Accordion, AccordionButton, AccordionItem, AccordionIcon, AccordionPane
 import Navbar from "../components/navbar";
 import Main from "../components/main";
 import Footer from "../components/footer";
+import { useNavigate } from 'react-router-dom';
 
 export default function FAQ(props) 
 {
+    const navigate = useNavigate();
+
+    function handleNavigate(path) 
+    {
+        return () => navigate(path);
+    }
+
     return (
     <div className="classes">
         <Grid
@@ -114,6 +122,7 @@ export default function FAQ(props)
                             _hover={{bg:"black", color: "brand.highlightGold"}}
                             maxW={"30vw"} 
                             mt={"12"}
+                            onClick={handleNavigate('/contact')}
                             >
                                 Schedule Appointment
                             </Button>

@@ -132,12 +132,24 @@ export default function Footer({contact})
             >
                 <VStack>
                     <HStack>
-                        <IconButton as={FaTwitter} bg={"transparent"} color={"brand.secondaryWhite"} _hover={{bg:"transparent", color:"brand.highlightGold"}}/>
-                        <IconButton as={AiFillInstagram} bg={"transparent"} color={"brand.secondaryWhite"} _hover={{bg:"transparent", color:"brand.highlightGold"}}/>
-                        <IconButton as={FaFacebookSquare} bg={"transparent"} color={"brand.secondaryWhite"} _hover={{bg:"transparent", color:"brand.highlightGold"}}/>
-                        <IconButton as={FaLinkedin} bg={"transparent"} color={"brand.secondaryWhite"} _hover={{bg:"transparent", color:"brand.highlightGold"}}/>
-                        <IconButton as={FaYoutube} bg={"transparent"} color={"brand.secondaryWhite"} _hover={{bg:"transparent", color:"brand.highlightGold"}}/>
-                        <IconButton as={FaTiktok} bg={"transparent"} color={"brand.secondaryWhite"} _hover={{bg:"transparent", color:"brand.highlightGold"}}/>
+                        <Link href="https://twitter.com/" isExternal>
+                            <IconButton as={FaTwitter} bg={"transparent"} color={"brand.secondaryWhite"} _hover={{bg:"transparent", color:"brand.highlightGold"}}/>
+                        </Link>
+                        <Link href="https://www.instagram.com/" isExternal>
+                            <IconButton as={AiFillInstagram} bg={"transparent"} color={"brand.secondaryWhite"} _hover={{bg:"transparent", color:"brand.highlightGold"}}/>
+                        </Link>
+                        <Link href="https://www.facebook.com/" isExternal>
+                            <IconButton as={FaFacebookSquare} bg={"transparent"} color={"brand.secondaryWhite"} _hover={{bg:"transparent", color:"brand.highlightGold"}}/>
+                        </Link>
+                        <Link href="https://www.linkedin.com/" isExternal>
+                            <IconButton as={FaLinkedin} bg={"transparent"} color={"brand.secondaryWhite"} _hover={{bg:"transparent", color:"brand.highlightGold"}}/>
+                        </Link>
+                        <Link href="https://www.youtube.com/" isExternal>
+                            <IconButton as={FaYoutube} bg={"transparent"} color={"brand.secondaryWhite"} _hover={{bg:"transparent", color:"brand.highlightGold"}}/>
+                        </Link>
+                        <Link href="https://www.tiktok.com/en/" isExternal>
+                            <IconButton as={FaTiktok} bg={"transparent"} color={"brand.secondaryWhite"} _hover={{bg:"transparent", color:"brand.highlightGold"}}/>
+                        </Link>
                     </HStack>
                     <Heading
                         fontFamily="Raleway"

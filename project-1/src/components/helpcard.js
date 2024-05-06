@@ -1,7 +1,16 @@
 import { Box, Card, Image, Stack, Text, Heading, CardBody, Button, CardFooter, ButtonGroup, Divider} from "@chakra-ui/react";
+import { useNavigate } from 'react-router-dom';
 
-export default function helpCard(props) 
+
+export default function HelpCard(props) 
 {
+    const navigate = useNavigate();
+
+    function handleNavigate(path) 
+    {
+        return () => navigate(path);
+    }
+
     return (
         <Card 
         maxW={{base:'400px'}}
@@ -41,6 +50,7 @@ export default function helpCard(props)
             color="black" 
             bg="transparent" 
             _hover={{bg:"transparent", color: "brand.highlightGold"}}
+            onClick={handleNavigate('/contact')}
             >
                 Schedule Appointment
             </Button>
